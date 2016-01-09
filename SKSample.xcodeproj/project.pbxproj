@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6E57F11C40E8CE00D47B55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E57F01C40E8CE00D47B55 /* CoreGraphics.framework */; };
+		1F6E57F31C40E8D600D47B55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E57F21C40E8D600D47B55 /* UIKit.framework */; };
+		1F6E57F51C40E8E400D47B55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E57F41C40E8E400D47B55 /* Foundation.framework */; };
+		1F6E57FA1C40ECE300D47B55 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F6E57F91C40ECE300D47B55 /* config.json */; };
+		1F6E57FE1C40EFEF00D47B55 /* PlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E57FD1C40EFEF00D47B55 /* PlayScene.m */; };
+		1F6E58011C40F67B00D47B55 /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E58001C40F67B00D47B55 /* TitleScene.m */; };
 		1FB1A3EA1C40DD48007674DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1A3E91C40DD48007674DE /* main.m */; };
 		1FB1A3ED1C40DD48007674DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1A3EC1C40DD48007674DE /* AppDelegate.m */; };
 		1FB1A3F01C40DD48007674DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1A3EF1C40DD48007674DE /* ViewController.m */; };
@@ -35,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F6E57F01C40E8CE00D47B55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F6E57F21C40E8D600D47B55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F6E57F41C40E8E400D47B55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F6E57F91C40ECE300D47B55 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		1F6E57FC1C40EFEF00D47B55 /* PlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayScene.h; path = ../PlayScene.h; sourceTree = "<group>"; };
+		1F6E57FD1C40EFEF00D47B55 /* PlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayScene.m; path = ../PlayScene.m; sourceTree = "<group>"; };
+		1F6E57FF1C40F67B00D47B55 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../TitleScene.h; sourceTree = "<group>"; };
+		1F6E58001C40F67B00D47B55 /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleScene.m; path = ../TitleScene.m; sourceTree = "<group>"; };
 		1FB1A3E51C40DD48007674DE /* SKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB1A3E91C40DD48007674DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FB1A3EB1C40DD48007674DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6E57F51C40E8E400D47B55 /* Foundation.framework in Frameworks */,
+				1F6E57F31C40E8D600D47B55 /* UIKit.framework in Frameworks */,
+				1F6E57F11C40E8CE00D47B55 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F6E57F61C40E92600D47B55 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E57F41C40E8E400D47B55 /* Foundation.framework */,
+				1F6E57F21C40E8D600D47B55 /* UIKit.framework */,
+				1F6E57F01C40E8CE00D47B55 /* CoreGraphics.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		1F6E57FB1C40ECFC00D47B55 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E57F91C40ECE300D47B55 /* config.json */,
+			);
+			name = Assets;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		1FB1A3DC1C40DD48007674DE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +121,7 @@
 				1FB1A4011C40DD48007674DE /* SKSampleTests */,
 				1FB1A40C1C40DD48007674DE /* SKSampleUITests */,
 				1FB1A3E61C40DD48007674DE /* Products */,
+				1F6E57F61C40E92600D47B55 /* frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +138,15 @@
 		1FB1A3E71C40DD48007674DE /* SKSample */ = {
 			isa = PBXGroup;
 			children = (
+				1F6E57FB1C40ECFC00D47B55 /* Assets */,
 				1FB1A3EB1C40DD48007674DE /* AppDelegate.h */,
 				1FB1A3EC1C40DD48007674DE /* AppDelegate.m */,
 				1FB1A3EE1C40DD48007674DE /* ViewController.h */,
 				1FB1A3EF1C40DD48007674DE /* ViewController.m */,
+				1F6E57FF1C40F67B00D47B55 /* TitleScene.h */,
+				1F6E58001C40F67B00D47B55 /* TitleScene.m */,
+				1F6E57FC1C40EFEF00D47B55 /* PlayScene.h */,
+				1F6E57FD1C40EFEF00D47B55 /* PlayScene.m */,
 				1FB1A3F11C40DD48007674DE /* Main.storyboard */,
 				1FB1A3F41C40DD48007674DE /* Assets.xcassets */,
 				1FB1A3F61C40DD48007674DE /* LaunchScreen.storyboard */,
@@ -244,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB1A3F81C40DD48007674DE /* LaunchScreen.storyboard in Resources */,
+				1F6E57FA1C40ECE300D47B55 /* config.json in Resources */,
 				1FB1A3F51C40DD48007674DE /* Assets.xcassets in Resources */,
 				1FB1A3F31C40DD48007674DE /* Main.storyboard in Resources */,
 			);
@@ -270,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6E58011C40F67B00D47B55 /* TitleScene.m in Sources */,
 				1FB1A3F01C40DD48007674DE /* ViewController.m in Sources */,
 				1FB1A3ED1C40DD48007674DE /* AppDelegate.m in Sources */,
+				1F6E57FE1C40EFEF00D47B55 /* PlayScene.m in Sources */,
 				1FB1A3EA1C40DD48007674DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +543,7 @@
 				1FB1A4141C40DD48007674DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FB1A4151C40DD48007674DE /* Build configuration list for PBXNativeTarget "SKSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +552,7 @@
 				1FB1A4171C40DD48007674DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FB1A4181C40DD48007674DE /* Build configuration list for PBXNativeTarget "SKSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +561,7 @@
 				1FB1A41A1C40DD48007674DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TitleScene.h"
 @import SpriteKit;
 
 @interface ViewController ()
@@ -19,6 +20,7 @@
 - (void)loadView {
     SKView *skView = [[SKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.view = skView;
+    
 }
 
 - (void)viewDidLoad {
@@ -31,7 +33,8 @@
     skView.showsNodeCount = YES;
     skView.showsFPS = YES;
     
-    SKScene *scene = [SKScene sceneWithSize:self.view.bounds.size];
+//    SKScene *scene = [SKScene sceneWithSize:self.view.bounds.size];
+    SKScene *scene = [TitleScene sceneWithSize:self.view.bounds.size];
     [skView presentScene:scene];
     
 }

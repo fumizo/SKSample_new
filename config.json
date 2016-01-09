@@ -1,0 +1,9 @@
+{
+    "block" : {
+        "margin" : 16.0,
+        "width" : 34.0,
+        "height" : 16.0,
+        "rows" : 5,
+        "max_life" : 5
+    },
+}
