@@ -15,6 +15,7 @@
 
 @implementation ViewController
 
+//loadViewで、self.viewをSKViewに差し替える
 - (void)loadView {
     SKView *skView = [[SKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.view = skView;
@@ -24,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //情報表示の設定をした後、SKSceneをインスタンス化して表示
     SKView *skView = (SKView *)self.view;
     skView.showsDrawCount = YES;
     skView.showsNodeCount = YES;
