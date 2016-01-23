@@ -37,7 +37,6 @@ static const uint32_t ballCategory = 0x1 << 1; //*2だよ
         self.physicsWorld.contactDelegate = self;  //物理演算をselfの中でやるよ。これがないと
     }
     return self;
-    
 }
 
 
