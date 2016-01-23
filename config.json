@@ -6,4 +6,19 @@
         "rows" : 5,
         "max_life" : 5
     },
+    
+    
+    "paddle" : {
+        "width" : 70.0,
+        "height" : 14.0,
+        "y" : 40.0,
+        "speed" : 0.005
+    },
+    "ball" : {
+        "radius" : 6.0,
+        "velocity" : {
+            "x" : 50.0,
+            "y" : 120.0
+        }
+    },
 }

@@ -16,6 +16,15 @@
 
 @implementation ViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 //loadViewで、self.viewをSKViewに差し替える
 - (void)loadView {
     SKView *skView = [[SKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -36,6 +45,7 @@
 //    SKScene *scene = [SKScene sceneWithSize:self.view.bounds.size];
     SKScene *scene = [TitleScene sceneWithSize:self.view.bounds.size];
     [skView presentScene:scene];
+    
     
 }
 
